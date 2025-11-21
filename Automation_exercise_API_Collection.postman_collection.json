@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "aa6506d4-83b3-419a-a4db-e528e1084635",
+		"name": "Automation_exercise_API_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41199097"
+	},
+	"item": [
+		{
+			"name": "Products_list",
+			"item": [
+				{
+					"name": "View_ProductsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/productsList",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"productsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_to_Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/productsList",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"productsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View_cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/view_cart?ajax=true",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"view_cart"
+							],
+							"query": [
+								{
+									"key": "ajax",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brands_list",
+			"item": [
+				{
+					"name": "View_BrandList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://automationexercise.com/api/brandsList",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"brandsList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_BrandList",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://automationexercise.com/api/brandsList",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"brandsList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Verify_login",
+			"item": [
+				{
+					"name": "Verify Login without email parameter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://automationexercise.com/api/verifyLogin",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"verifyLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dlt_Verify Login",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://automationexercise.com/api/verifyLogin",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"verifyLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Login with invalid details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "labonno@Gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "112233",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/verifyLogin",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"verifyLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Login with valid details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "labonno@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "112233",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/verifyLogin",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"verifyLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User_Account",
+			"item": [
+				{
+					"name": "Create_User_Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "liza",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "liza@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Mrs",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "17",
+									"type": "text"
+								},
+								{
+									"key": "birth_month",
+									"value": "june",
+									"type": "text"
+								},
+								{
+									"key": "birth_year",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "liza",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "akter",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "zzz",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "xxx",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Bangladesh ",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "001",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "01786644869",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/createAccount",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"createAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "liza",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "liza@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Miss",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "birth_month",
+									"value": "june",
+									"type": "text"
+								},
+								{
+									"key": "birth_year",
+									"value": "2010",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "nur",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "akter",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "456",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Bangladesh",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "111",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Dhaka",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "0123456734",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/updateAccount",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"updateAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password ",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/deleteAccount",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"deleteAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user account detail by email",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search_Products",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search_product",
+									"value": "tshirt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://automationexercise.com/api/searchProduct?search_product=top",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"searchProduct"
+							],
+							"query": [
+								{
+									"key": "search_product",
+									"value": "top"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Product without parameter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://automationexercise.com/api/searchProduct",
+							"protocol": "https",
+							"host": [
+								"automationexercise",
+								"com"
+							],
+							"path": [
+								"api",
+								"searchProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
